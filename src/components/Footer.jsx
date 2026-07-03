@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import business from "../data/business";
 
 const Footer = () => {
   return (
@@ -116,7 +117,7 @@ const Footer = () => {
               <FaPhoneAlt className="text-yellow-500 mt-1" />
 
               <p>
-                +234 801 234 5678
+                {business.phone}
               </p>
 
             </div>
@@ -126,7 +127,7 @@ const Footer = () => {
               <FaEnvelope className="text-yellow-500 mt-1" />
 
               <p>
-                hello@savora.com
+                {business.email}
               </p>
 
             </div>

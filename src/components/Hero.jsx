@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImg from "../assets/images/hero.jpg";
+import business from "../data/business";
 import { FaArrowRight, FaPlay, FaStar } from "react-icons/fa";
 
 const Hero = () => {
@@ -21,7 +22,7 @@ const Hero = () => {
           transition={{ duration: 0.9 }}
         >
           <span className="inline-block bg-yellow-500/20 text-yellow-400 px-5 py-2 rounded-full text-sm tracking-widest uppercase">
-            Fine Dining Experience
+            {business.tagline}
           </span>
 
           <h1 className="mt-8 text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
